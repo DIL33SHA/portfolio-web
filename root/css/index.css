@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin Sans");
+@import url("https://fonts.googleapis.com/css?family=PT mono"); 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #152238;
+    --second-color: #0072C6;
+    --text-color: #FFFFFF;
+    --bg-color: #152238;
+    --p-color: #FFFFFF;
+    --big-font: 3.2em;
+    --medium-font: 1.8rem;
+    --p-font: 0.941rem;
+    --main-font:'Josefin Sans',sans-serif;
+    --second-font:'PT mono',monospace;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+.header{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    padding: 8px 64px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+}
+.contactlist{
+    list-style-type: none;
+    display: flex;
+    align-items: center; 
+    font-size: var(--p-font);
+    font-weight: 500;
+    font-family: var(--second-font);
+}
+.methodli{
+    padding: 0 32px;
+    transform: scale(1.1);
+}
+.email, .phone{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.email:hover, .phone:hover{
+    color: var(--second-color);   
+    font-weight: 700;
+    transition: all 0.3s;
+}
