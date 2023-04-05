@@ -7,10 +7,10 @@
     box-sizing: border-box;
 }
 :root{
-    --main-color: #152238;
+    --main-color: #080618;
     --second-color: #0072C6;
     --text-color: #FFFFFF; 
-    --bg-color: #152238;
+    --bg-color: #080618;
     --p-color: #FFFFFF;
     --hover:hsl(260, 100%, 51%);
     --big-font: 3.2em;
@@ -24,8 +24,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: rgb(21,34,56);
-    background: linear-gradient(90deg, rgba(21,34,56,1) 33%, rgba(12,63,101,1) 100%);
+    background-color: var(--bg-color);
     color: var(--text-color);
 }
 .header{
@@ -61,7 +60,7 @@ body{
     transition: all 0.3s;
 }
 .home{
-    margin: 128px 128px 78px 128px;
+    margin: 96px 128px 78px 128px;
     padding: 32px;
     display: flex;
     justify-content: left;
@@ -103,4 +102,16 @@ body{
     height: 300px;
     border-radius: 50px;
     z-index: 4;
+}
+.social{
+    margin-top: 16px;
+}
+.bi{
+    font-size: var(--medium-font);
+    padding-right: 24px;
+    color: var(--text-color);
+}
+.bi:hover{
+    color: var(--hover);
+    transition: all 0.3s;
 }
